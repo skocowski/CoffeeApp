@@ -7,8 +7,6 @@
 
 import SwiftUI
 import CoreData
-
-
 struct HomeView: View {
     @Environment(\.managedObjectContext) var moc
     @EnvironmentObject var dataController: DataController
@@ -162,6 +160,5 @@ struct HomeView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
-    
 }
 
