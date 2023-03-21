@@ -7,18 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D23349D29B78E10001E43A5 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D23349C29B78E10001E43A5 /* Array+Extension.swift */; };
+		7D2334A229B84BC7001E43A5 /* Transaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2334A029B84BC7001E43A5 /* Transaction+CoreDataClass.swift */; };
+		7D2334A329B84BC7001E43A5 /* Transaction+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2334A129B84BC7001E43A5 /* Transaction+CoreDataProperties.swift */; };
+		7D2334A929B9A57A001E43A5 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2334A829B9A57A001E43A5 /* StatsView.swift */; };
+		7D2334AB29B9C6CE001E43A5 /* TransactionsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2334AA29B9C6CE001E43A5 /* TransactionsListView.swift */; };
+		7D2334AE29BB7D14001E43A5 /* SavingUsedWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2334AD29BB7D14001E43A5 /* SavingUsedWords.swift */; };
 		7D3FC1C829993DF9000FA748 /* CoffeeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FC1C729993DF9000FA748 /* CoffeeAppApp.swift */; };
-		7D3FC1CA29993DF9000FA748 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FC1C929993DF9000FA748 /* ContentView.swift */; };
+		7D3FC1CA29993DF9000FA748 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FC1C929993DF9000FA748 /* HomeView.swift */; };
 		7D3FC1CC29993DFA000FA748 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3FC1CB29993DFA000FA748 /* Assets.xcassets */; };
 		7D3FC1CF29993DFA000FA748 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D3FC1CE29993DFA000FA748 /* Preview Assets.xcassets */; };
+		7D3FC1D729993F8B000FA748 /* CoffeeShop3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FC1D529993F8B000FA748 /* CoffeeShop3.xcdatamodeld */; };
+		7D3FC1D929994031000FA748 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D3FC1D829994031000FA748 /* DataController.swift */; };
+		7D663BC729B1D686002AB7CF /* RangeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D663BC629B1D686002AB7CF /* RangeSlider.swift */; };
+		7DC2A5E929C5AB1E005DB27C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC2A5E829C5AB1E005DB27C /* Item.swift */; };
+		7DCB23F729A219920045E8EF /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB23F629A219920045E8EF /* AddTransactionView.swift */; };
+		7DCB23F929A2452A0045E8EF /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB23F829A2452A0045E8EF /* View+Extension.swift */; };
+		7DCB23FD29A249300045E8EF /* GeneralFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB23FC29A249300045E8EF /* GeneralFunctions.swift */; };
+		7DCB240129A262D10045E8EF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB240029A262D10045E8EF /* MainTabView.swift */; };
+		7DCB240729A3B0C70045E8EF /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB240629A3B0C70045E8EF /* Color+Extension.swift */; };
+		7DCB240B29A3D6D60045E8EF /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DCB240A29A3D6D60045E8EF /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D23349C29B78E10001E43A5 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		7D2334A029B84BC7001E43A5 /* Transaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		7D2334A129B84BC7001E43A5 /* Transaction+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Transaction+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7D2334A829B9A57A001E43A5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		7D2334AA29B9C6CE001E43A5 /* TransactionsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsListView.swift; sourceTree = "<group>"; };
+		7D2334AD29BB7D14001E43A5 /* SavingUsedWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingUsedWords.swift; sourceTree = "<group>"; };
+		7D2334AF29C06EDB001E43A5 /* CoffeeApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoffeeApp.entitlements; sourceTree = "<group>"; };
+		7D2334B029C07164001E43A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		7D3FC1C429993DF9000FA748 /* CoffeeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D3FC1C729993DF9000FA748 /* CoffeeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeAppApp.swift; sourceTree = "<group>"; };
-		7D3FC1C929993DF9000FA748 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D3FC1C929993DF9000FA748 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		7D3FC1CB29993DFA000FA748 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D3FC1CE29993DFA000FA748 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D3FC1D629993F8B000FA748 /* CoffeeShopModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoffeeShopModel.xcdatamodel; sourceTree = "<group>"; };
+		7D3FC1D829994031000FA748 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7D663BC629B1D686002AB7CF /* RangeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeSlider.swift; sourceTree = "<group>"; };
+		7DC2A5E829C5AB1E005DB27C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7DCB23F629A219920045E8EF /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		7DCB23F829A2452A0045E8EF /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		7DCB23FC29A249300045E8EF /* GeneralFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralFunctions.swift; sourceTree = "<group>"; };
+		7DCB240029A262D10045E8EF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		7DCB240629A3B0C70045E8EF /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		7DCB240A29A3D6D60045E8EF /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +66,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7D2334AC29BB7CEC001E43A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7D2334AD29BB7D14001E43A5 /* SavingUsedWords.swift */,
+				7D3FC1D829994031000FA748 /* DataController.swift */,
+				7DC2A5E829C5AB1E005DB27C /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7D3FC1BB29993DF9000FA748 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +95,17 @@
 		7D3FC1C629993DF9000FA748 /* CoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
+				7D2334B029C07164001E43A5 /* Info.plist */,
+				7D2334AF29C06EDB001E43A5 /* CoffeeApp.entitlements */,
 				7D3FC1C729993DF9000FA748 /* CoffeeAppApp.swift */,
-				7D3FC1C929993DF9000FA748 /* ContentView.swift */,
+				7D2334AC29BB7CEC001E43A5 /* Models */,
+				7DCB23C729A0AF000045E8EF /* Views */,
+				7D3FC1D529993F8B000FA748 /* CoffeeShop3.xcdatamodeld */,
+				7DC2A5EA29C5AC81005DB27C /* CoreDataClasses */,
+				7DCB23F329A213780045E8EF /* Helpers */,
 				7D3FC1CB29993DFA000FA748 /* Assets.xcassets */,
 				7D3FC1CD29993DFA000FA748 /* Preview Content */,
+				7DC2A5E729C5A9D7005DB27C /* For Future */,
 			);
 			path = CoffeeApp;
 			sourceTree = "<group>";
@@ -65,6 +116,47 @@
 				7D3FC1CE29993DFA000FA748 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7DC2A5E729C5A9D7005DB27C /* For Future */ = {
+			isa = PBXGroup;
+			children = (
+				7D663BC629B1D686002AB7CF /* RangeSlider.swift */,
+			);
+			path = "For Future";
+			sourceTree = "<group>";
+		};
+		7DC2A5EA29C5AC81005DB27C /* CoreDataClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7D2334A029B84BC7001E43A5 /* Transaction+CoreDataClass.swift */,
+				7D2334A129B84BC7001E43A5 /* Transaction+CoreDataProperties.swift */,
+			);
+			path = CoreDataClasses;
+			sourceTree = "<group>";
+		};
+		7DCB23C729A0AF000045E8EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DCB23F629A219920045E8EF /* AddTransactionView.swift */,
+				7D3FC1C929993DF9000FA748 /* HomeView.swift */,
+				7DCB240029A262D10045E8EF /* MainTabView.swift */,
+				7D2334A829B9A57A001E43A5 /* StatsView.swift */,
+				7D2334AA29B9C6CE001E43A5 /* TransactionsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7DCB23F329A213780045E8EF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7DCB23F829A2452A0045E8EF /* View+Extension.swift */,
+				7DCB23FC29A249300045E8EF /* GeneralFunctions.swift */,
+				7DCB240629A3B0C70045E8EF /* Color+Extension.swift */,
+				7DCB240A29A3D6D60045E8EF /* Date+Extension.swift */,
+				7D23349C29B78E10001E43A5 /* Array+Extension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +175,8 @@
 			dependencies = (
 			);
 			name = CoffeeApp;
+			packageProductDependencies = (
+			);
 			productName = CoffeeApp;
 			productReference = 7D3FC1C429993DF9000FA748 /* CoffeeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +205,8 @@
 				Base,
 			);
 			mainGroup = 7D3FC1BB29993DF9000FA748;
+			packageReferences = (
+			);
 			productRefGroup = 7D3FC1C529993DF9000FA748 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +233,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D3FC1CA29993DF9000FA748 /* ContentView.swift in Sources */,
+				7DCB240B29A3D6D60045E8EF /* Date+Extension.swift in Sources */,
+				7DCB23FD29A249300045E8EF /* GeneralFunctions.swift in Sources */,
+				7D2334A229B84BC7001E43A5 /* Transaction+CoreDataClass.swift in Sources */,
+				7D23349D29B78E10001E43A5 /* Array+Extension.swift in Sources */,
+				7D2334A329B84BC7001E43A5 /* Transaction+CoreDataProperties.swift in Sources */,
+				7DCB23F729A219920045E8EF /* AddTransactionView.swift in Sources */,
+				7D663BC729B1D686002AB7CF /* RangeSlider.swift in Sources */,
+				7D3FC1D729993F8B000FA748 /* CoffeeShop3.xcdatamodeld in Sources */,
+				7D3FC1D929994031000FA748 /* DataController.swift in Sources */,
+				7D3FC1CA29993DF9000FA748 /* HomeView.swift in Sources */,
+				7DCB240729A3B0C70045E8EF /* Color+Extension.swift in Sources */,
+				7D2334AE29BB7D14001E43A5 /* SavingUsedWords.swift in Sources */,
+				7DCB23F929A2452A0045E8EF /* View+Extension.swift in Sources */,
+				7DC2A5E929C5AB1E005DB27C /* Item.swift in Sources */,
+				7D2334AB29B9C6CE001E43A5 /* TransactionsListView.swift in Sources */,
+				7D2334A929B9A57A001E43A5 /* StatsView.swift in Sources */,
 				7D3FC1C829993DF9000FA748 /* CoffeeAppApp.swift in Sources */,
+				7DCB240129A262D10045E8EF /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -264,17 +376,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoffeeApp/CoffeeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoffeeApp/Preview Content\"";
 				DEVELOPMENT_TEAM = KZDZ375338;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +395,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SK.CoffeeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,17 +409,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoffeeApp/CoffeeApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoffeeApp/Preview Content\"";
 				DEVELOPMENT_TEAM = KZDZ375338;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoffeeApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +428,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SK.CoffeeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +459,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7D3FC1D529993F8B000FA748 /* CoffeeShop3.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7D3FC1D629993F8B000FA748 /* CoffeeShopModel.xcdatamodel */,
+			);
+			currentVersion = 7D3FC1D629993F8B000FA748 /* CoffeeShopModel.xcdatamodel */;
+			path = CoffeeShop3.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7D3FC1BC29993DF9000FA748 /* Project object */;
 }

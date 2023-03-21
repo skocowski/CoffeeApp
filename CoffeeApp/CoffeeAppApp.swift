@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct CoffeeAppApp: App {
+    @StateObject private var dataController = DataController()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
+                .environmentObject(dataController)
         }
     }
 }
