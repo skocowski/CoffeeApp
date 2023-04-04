@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Showing a number as a currency.
 func asCurrency(value: Double) -> String {
     let formatter = NumberFormatter()
     formatter.numberStyle = .currency
@@ -14,6 +15,7 @@ func asCurrency(value: Double) -> String {
     return formatter.string(from: NSNumber(value: value)) ?? ""
 }
 
+// Showing a formatted number.
 func asNumber(value: Double) -> String {
     let formatter = NumberFormatter()
     formatter.numberStyle = .decimal
@@ -22,6 +24,7 @@ func asNumber(value: Double) -> String {
     return formatter.string(from: NSNumber(value: value)) ?? ""
 }
 
+// Calculating time since each transaction.
 func calcTimeSince(date: Date) -> String {
     let minutes = Int(-date.timeIntervalSinceNow) / 60
     let hours = minutes / 60

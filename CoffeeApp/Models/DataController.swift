@@ -13,6 +13,7 @@ class DataController: ObservableObject {
     let container: NSPersistentContainer
     
     @Published var savedTransactions: [Transaction] = [] {
+        // Loading items. Needed to have proper transactions summary.
         didSet {
             loadItems()
         }
@@ -26,12 +27,14 @@ class DataController: ObservableObject {
     @Published var dateRange: ClosedRange<Date>? = nil
     @Published var items = [Item]()
     @Published var startingDate: Date = Calendar.current.startOfDay(for: Date()) {
+        // Fetching data whenever user change the date.
         didSet {
             fetchTransactions()
             fetchOneMonthTransactions()
         }
     }
-    @Published var finishDate: Date = Date() {   // .endOfDay ?? Date()
+    @Published var finishDate: Date = Date() {
+        // Fetching data whenever user change the date.
         didSet {
             fetchTransactions()
             fetchOneMonthTransactions()
@@ -42,7 +45,6 @@ class DataController: ObservableObject {
    
     
     init() {
-      //  container = NSPersistentContainer(name: "CoffeeShop3")
         container = NSPersistentCloudKitContainer(name: "CoffeeShop3")
         container.loadPersistentStores { description, error in
             if let error = error {
@@ -55,16 +57,16 @@ class DataController: ObservableObject {
         
         fetchTransactions()
         fetchOneMonthTransactions()
-
     }
     
 
-    
+    // Fetching transactions within the date range.
     func fetchTransactions() {
         let request = NSFetchRequest<Transaction>(entityName: "Transaction")
         let filterKey = "date"
         request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
         
+        // If-else statement is necessary to work properly in case user choose starting date later than finish date.
         if self.startingDate <= self.finishDate {
             request.predicate = NSPredicate(format: "\(filterKey) >= %@ AND \(filterKey) < %@", argumentArray: [self.startingDate, self.finishDate.endOfDay ?? self.finishDate])
         } else {
@@ -80,6 +82,7 @@ class DataController: ObservableObject {
         }
     }
     
+    // Fetching one month transactions. Needed to display sell in Home View.
     func fetchOneMonthTransactions() {
         let request = NSFetchRequest<Transaction>(entityName: "Transaction")
         let filterKey = "date"
@@ -94,6 +97,7 @@ class DataController: ObservableObject {
         }
     }
     
+    // Saving transaction into CoreData and fetching new lists.
     func saveData() {
         do {
             try container.viewContext.save()
@@ -107,14 +111,15 @@ class DataController: ObservableObject {
     
     func addEditTransaction(title: String, value: Double, isExpense: Bool, date: Date, context: NSManagedObjectContext) {
         
+        // Editing transaction.
         if let transaction = editTransaction {
             
             transaction.title = title
             transaction.value = value
             transaction.isExpense = isExpense
             transaction.date = date
-      //      usedWords.insert(title)
         
+        // If editTransaction == nil then the function adds a new transaction.
         } else {
             let transaction = Transaction(context: context)
         
@@ -122,30 +127,35 @@ class DataController: ObservableObject {
             transaction.value = value
             transaction.isExpense = isExpense
             transaction.date = date
-  //          usedWords.insert(title)
-            
+
         }
- 
+        // Saving into CoreData.
         saveData()
     }
     
+    // This function is necessary to prepare transactions summary withing the range of dates.
     func loadItems() {
         items.removeAll()
         
+        // Titles of transactions
         var arrayOfTitles = [String]()
         
+        // Title of all fetched transactions
         for item in savedTransactions {
             arrayOfTitles.append(item.wrappedTitle)
         }
         
+        // Sorting and removing duplicate in titles so we having all the titles unique
         let sortedArray = arrayOfTitles.removeDuplicates().sorted(by: <)
         
+        // This loop counts the amount of each item sold.
         for index in 0..<sortedArray.count {
             var newItem = Item()
             newItem.title = sortedArray[index]
             let itemArray = savedTransactions.filter { $0.title == sortedArray[index] }
             newItem.quantity = itemArray.count
             
+            // This loop sums up the value of each sold item. For example if we sold 5 cafes, each costed a dollar, the result will be 5 dollars.
             for item in itemArray {
                 if !item.isExpense {
                     newItem.value += item.value
@@ -154,11 +164,11 @@ class DataController: ObservableObject {
                 }
                 
             }
-            
             items.append(newItem)
         }
     }
     
+    // Deleting transaction by swiping the list row.
     func deleteItem(offsets: IndexSet) {
         withAnimation {
             offsets.map { savedTransactions[$0] }.forEach(container.viewContext.delete)
@@ -166,6 +176,7 @@ class DataController: ObservableObject {
         }
     }
     
+    // Calculating total sell today. Displayed in Home View.
     func totalSellToday() -> Double {
         var sellToday: Double = 0
         
@@ -185,6 +196,7 @@ class DataController: ObservableObject {
         return sellToday
     }
     
+    // Calculating total yserday sell. Displayed in Home View.
     func totalSellYesterday() -> Double {
         var sellYesterday: Double = 0
         let calendar = Calendar.current
@@ -204,6 +216,7 @@ class DataController: ObservableObject {
         
     }
     
+    // Calculating total sell in current week. Displayed in Home View.
     func totalSellWeek() -> Double {
         var sellWeek: Double = 0
         guard let weekStart = Date().startOfWeek else { return sellWeek }
@@ -221,6 +234,7 @@ class DataController: ObservableObject {
         return sellWeek
     }
     
+    // Calculating total sell in current month. Displayed in Home View.
     func totalSellMonth() -> Double {
         var sellMonth: Double = 0
         

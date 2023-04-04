@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Some useful extensions, not all used in the project.
 extension Date {
     func startOfTheWeek(using calendar: Calendar = .current) -> Date {
         calendar.dateComponents([.calendar, .yearForWeekOfYear, .weekOfYear], from: self).date!

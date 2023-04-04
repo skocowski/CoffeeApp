@@ -41,7 +41,6 @@ struct BarTitle: ViewModifier {
 struct BarValue: ViewModifier {
     func body(content: Content) -> some View {
         content
-       //     .foregroundColor(Color.theme.universal)
             .frame(maxWidth: .infinity)
     }
 }

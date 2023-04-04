@@ -7,6 +7,7 @@
 
 import Foundation
 
+// That struct is needed to do summary of sold items within the rang eof dates.
 struct Item: Hashable {
     var title: String = ""
     var value: Double = 0.0
